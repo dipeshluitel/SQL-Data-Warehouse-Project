@@ -44,6 +44,9 @@ The goal is to design a scalable, modular, and production-ready data warehouse t
 ## 📂 Project Structure
 AVAILABLE SOON
 
+## License
+This Project is licensed under the [MIT License](LICENSE). Feel Free to use and modify. :-)
+
 ---
 
 
