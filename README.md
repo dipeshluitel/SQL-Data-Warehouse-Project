@@ -1,4 +1,4 @@
-# SQL Data Warehouse Project (Medallion Architecture)
+# SQL Data Warehouse Project ([Medallion Architecture](https://www.databricks.com/blog/what-is-medallion-architecture))
 
 ## 📌 Overview
 This project focuses on building a **modern SQL-based Data Warehouse** using **Medallion Architecture (Bronze → Silver → Gold)** on **Microsoft SQL Server**.
