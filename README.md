@@ -40,7 +40,16 @@ The goal is to design a scalable, modular, and production-ready data warehouse t
 - **Design Tool**: Draw.io  
 
 ---
-
+## Naming Convention
+All names must strat with the source system name, and table names must match their original names without renaming.
+`<sourcesystem>_<entity>`
+  - `<sourcesystem>`: Source system name (e.g., `erp`, `crm`)
+  - `<entity>`: Exact table name from the source system
+    
+  - **Example:**
+    `crm_customer_info`
+    *(Customer information from CRM system)*
+ 
 ## 📂 Project Structure
 AVAILABLE SOON
 
