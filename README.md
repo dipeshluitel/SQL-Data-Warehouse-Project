@@ -35,12 +35,13 @@ The goal is to design a scalable, modular, and production-ready data warehouse t
 - **Database**: Microsoft SQL Server  
 - **Data Sources**: CRM & ERP (CSV files)  
 - **Processing Type**: Batch Processing  
-- **Loading Strategy**: Full Load  
+- **Loading Strategy**: Full Load  (Truncate and Load)
 - **Architecture**: Medallion Architecture  
 - **Design Tool**: Draw.io  
 
 ---
 ## Naming Convention
+### Tables
 All names must strat with the source system name, and table names must match their original names without renaming.
 `<sourcesystem>_<entity>`
   - `<sourcesystem>`: Source system name (e.g., `erp`, `crm`)
@@ -49,6 +50,12 @@ All names must strat with the source system name, and table names must match the
   - **Example:**
     `crm_customer_info`
     *(Customer information from CRM system)*
+### Stored Procedure
+`load_<layer>`
+  - `<layer>` represents the layer being loaded, such as `bronze`, `silver` or `gold`
+  - **Example:**
+    `load_bronze`
+    *(Stored Procedure for loading data into the Bronze Layer)*
  
 ## 📂 Project Structure
 AVAILABLE SOON
