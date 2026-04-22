@@ -1,6 +1,6 @@
 # SQL Data Warehouse Project ([Medallion Architecture](https://www.databricks.com/blog/what-is-medallion-architecture))
 
-## 📌 Overview
+## Overview
 This project focuses on building a **modern SQL-based Data Warehouse** using **Medallion Architecture (Bronze → Silver → Gold)** on **Microsoft SQL Server**.
 
 The pipeline ingests raw data from **CRM and ERP systems (CSV files)** and processes it using **batch processing with a full load strategy**.
@@ -30,7 +30,7 @@ The goal is to design a scalable, modular, and production-ready data warehouse t
 
 ---
 
-## ⚙️ Tech Stack
+## Tech Stack
 
 - **Database**: Microsoft SQL Server  
 - **Data Sources**: CRM & ERP (CSV files)  
@@ -57,7 +57,7 @@ All names must strat with the source system name, and table names must match the
     `load_bronze`
     *(Stored Procedure for loading data into the Bronze Layer)*
  
-## 📂 Project Structure
+## Project Structure
 AVAILABLE SOON
 
 ## License
