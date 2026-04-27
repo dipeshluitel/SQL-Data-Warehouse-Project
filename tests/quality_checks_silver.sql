@@ -125,3 +125,23 @@ ORDER BY sls_sales, sls_quantity, sls_price
 
 -- Final Overview of Whole Table
 SELECT * FROM silver.crm_sales_details
+
+  
+/*
+================================
+CHECKING 'silver.erp_cust_az12'
+================================
+*/
+
+--Checks For Invalid(out of range) Dates
+SELECT 
+bdate FROM silver.erp_cust_az12 
+WHERE bdate > GETDATE()
+
+--Data Standarization and Consistency (For Low cardinality Gender)
+SELECT 
+DISTINCT gen 
+FROM silver.erp_cust_az12 
+
+-- Final Overview of Whole Table
+SELECT * FROM silver.erp_cust_az12
