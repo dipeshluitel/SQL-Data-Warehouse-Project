@@ -145,3 +145,18 @@ FROM silver.erp_cust_az12
 
 -- Final Overview of Whole Table
 SELECT * FROM silver.erp_cust_az12
+
+
+/*
+================================
+CHECKING 'silver.erp_loc_a101'
+================================
+*/
+
+--Data Standarization and Consistency (For Low cardinality/null in country)
+SELECT 
+DISTINCT cntry
+FROM silver.erp_loc_a101
+
+-- Final Overview of Whole Table
+SELECT * FROM silver.erp_loc_a101
