@@ -160,3 +160,34 @@ FROM silver.erp_loc_a101
 
 -- Final Overview of Whole Table
 SELECT * FROM silver.erp_loc_a101
+
+
+ /*
+================================
+CHECKING 'silver.erp_px_cat_g1v2'
+================================
+*/
+ 
+--Checks For WhiteSpaces
+--Expec: No Result
+
+SELECT * 
+FROM silver.erp_px_cat_g1v2
+WHERE cat!= TRIM(cat) OR subcat!=TRIM(subcat) OR maintenance!=TRIM(maintenance)
+
+--check for data consistency and Standardization
+SELECT DISTINCT
+cat 
+FROM silver.erp_px_cat_g1v2
+
+SELECT DISTINCT
+subcat 
+FROM silver.erp_px_cat_g1v2
+
+SELECT DISTINCT
+maintenance 
+FROM silver.erp_px_cat_g1v2
+
+
+-- Final Overview of Whole Table
+SELECT * FROM silver.erp_px_cat_g1v2
