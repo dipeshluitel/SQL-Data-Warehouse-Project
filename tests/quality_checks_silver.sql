@@ -1,4 +1,16 @@
 /*
+Script Purpose:
+  This script performs various quality checks for data consistency, accuracy and standardization within the 'silver' schema
+  performs:
+    - check for Nulls or Duplicates in Primary Key
+    - check for unwanted spaces(WhiteSpaces)
+    - Data Standardization and Consistency
+    - CHECK FOR NULLS OR NEGATIVE NUMBERS
+    - Check for Invalid Date 
+    - Check for Invalid Date Orders
+*/
+
+/*
 ================================
 CHECKING 'silver.crm_cust_info'
 ================================
