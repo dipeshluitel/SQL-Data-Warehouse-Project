@@ -1,1 +1,18 @@
+/*
+-----------------------------------------
+Checkin 'gold.dim_customers'
+-----------------------------------------
+*/
+--Check Unique Rows (Duplicates)
+--Expec: No Result
+SELECT 
+	customer_key, 
+	COUNT(*) 
+FROM gold.dim_customers
+GROUP BY customer_key
+HAVING COUNT(*) > 1
 
+--Check For valid Data Integration (Note: Integrated GENDER data from crm_cust_info and erp_cust_az12, crm_cust_info is the Master Table for gender data so checking if all the data are valid after Using CASE)
+SELECT 
+	DISTINCT gender 
+FROM gold.dim_customers
