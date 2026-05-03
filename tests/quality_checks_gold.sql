@@ -10,9 +10,23 @@ SELECT
 	COUNT(*) 
 FROM gold.dim_customers
 GROUP BY customer_key
-HAVING COUNT(*) > 1
+HAVING COUNT(*) > 1;
 
 --Check For valid Data Integration (Note: Integrated GENDER data from crm_cust_info and erp_cust_az12, crm_cust_info is the Master Table for gender data so checking if all the data are valid after Using CASE)
 SELECT 
 	DISTINCT gender 
-FROM gold.dim_customers
+FROM gold.dim_customers;
+
+/*
+-----------------------------------------
+Checkin 'gold.dim_products'
+-----------------------------------------
+*/
+--Check Unique Rows (Duplicates)
+--Expec: No Result
+SELECT 
+	product_key, 
+	COUNT(*) 
+FROM gold.dim_products
+GROUP BY product_key
+HAVING COUNT(*) > 1;
