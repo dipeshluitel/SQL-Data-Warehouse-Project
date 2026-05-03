@@ -12,6 +12,7 @@ The goal is to design a scalable, modular, and production-ready data warehouse t
 ## Architecture
 
 ### Medallion Architecture Layers
+![Data Architecture](docs/data_architecture.png)
 
 #### Bronze Layer (Raw Data)
 - Stores raw, unprocessed data from source systems
