@@ -58,7 +58,39 @@ All names must strat with the source system name, and table names must match the
     *(Stored Procedure for loading data into the Bronze Layer)*
  
 ## Project Structure
-AVAILABLE SOON
+```
+SQL-Data-Warehouse-Project/
+├── LICENSE
+├── README.md
+├── datasets/
+│   ├── source_crm/
+│   │   ├── cust_info.csv
+│   │   ├── prd_info.csv
+│   │   └── sales_details.csv
+│   └── source_erp/
+│       ├── CUST_AZ12.csv
+│       ├── LOC_A101.csv
+│       └── PX_CAT_G1V2.csv
+├── docs/
+│   ├── data_architecture.png
+│   ├── data_catalog.md
+│   ├── data_flow_diagram.png
+│   ├── data_model.png
+│   └── integration_model.png
+├── scripts/
+│   ├── bronze/
+│   │   ├── ddl_bronze.sql
+│   │   └── procedure_load_bronze.sql
+│   ├── gold/
+│   │   └── ddl_gold.sql
+│   ├── init_database.sql
+│   └── silver/
+│       ├── ddl_silver.sql
+│       └── procedure_load_silver.sql
+└── tests/
+    ├── quality_checks_gold.sql
+    └── quality_checks_silver.sql
+```
 
 ## License
 This Project is licensed under the [MIT License](LICENSE). Feel Free to use and modify. :-)
